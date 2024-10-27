@@ -3,20 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memory Game - Krish's Dementia Trainer</title>
+    <title>Matching Game - Krish's Dementia Trainer</title>
     <link rel="stylesheet" href="../styles/styles.css">
     <script src="../scripts/memory-game.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Memory Game</h1>
+        <h1>Matching Game</h1>
+        <div id="points-display" class="points">Points: 0</div>
     </header>
 
     <main>
-        <section id="memory-game">
-            <h2>Krish Will Test Your Memory</h2>
+        <section id="main-menu">
+            <h2>Welcome to Krish's Dementia Trainer</h2>
+            <button id="play-button" class="play-button">Play Memory Game</button>
+        </section>
+
+        <section id="matching-game" style="display: none;">
+            <h2>Test your memory</h2>
+            <label for="difficulty">Select Difficulty:</label>
+            <select id="difficulty">
+                <option value="easy">Easy (4 x 5)</option>
+                <option value="medium">Medium (6 x 5)</option>
+                <option value="hard">Hard (8 x 5)</option>
+            </select>
             <div class="game-container"></div>
             <button id="reset-btn" class="play-button">Reset Game</button>
+            <button id="back-btn" class="play-button">Back to Main Menu</button>
         </section>
     </main>
 </body>

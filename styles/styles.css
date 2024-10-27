@@ -7,7 +7,8 @@ body {
 
 header {
     background-color: #87cefa;
-    color: #ffffff; 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2b1e1e; 
     text-align: center;
     padding: 20px; 
     border-bottom: 5px solid #4682b4; 
@@ -55,12 +56,18 @@ p {
     color: #333333;
 }
 
-#memory-game {
+#matching-game {
     margin-top: 20px;
     padding: 15px;
     background-color: #e0f7fa;  
     border: 1px solid #80deea;  
     border-radius: 10px;  
+}
+
+#difficulty{
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #80deea;
 }
 
 .game-container {
